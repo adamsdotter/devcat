@@ -1,4 +1,27 @@
-html {
-    background-color: $primary;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #444;
+    background-color: $color-primary;
     text-align: center;
+}
+
+hr {
+    margin-top: rhythm();
+    margin-bottom: rhythm();
+    background-color: color('rat');
+    height: 1px;
+    border: 0;
+}
+
+a {
+    $link-color: white;
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+        color: shade($link-color, 25%);
+    }
 }

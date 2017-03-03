@@ -1,0 +1,22 @@
+$colors: (
+    'white': (
+        'base': #ffffff
+    ),
+    'coral': (
+        'base': #f1896a,
+        'light': #f5a78f
+    ),
+    'shitty': (
+        'base': #74452e,
+        'light': #977463
+    ),
+    'rat': (
+        'base': #7b7b80
+    )
+);
+
+@function color($palette, $tone: 'base') {
+    $color: map-get(map-get($colors, $palette), $tone);
+
+    @return $color;
+}

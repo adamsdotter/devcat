@@ -1,0 +1,47 @@
+$font-size: size('base');
+
+html {
+    font-size: percentage($font-size / 16);
+    font-family: $font-primary;
+    line-height: calc-line-height($font-size);
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: rhythm();
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    margin-bottom: rhythm('medium');
+    font-weight: 700;
+    display: block;
+}
+
+ul,
+ol {
+    margin-bottom: rhythm();
+    padding-left: rhythm();
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0;
+}

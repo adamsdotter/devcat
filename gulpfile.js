@@ -7,7 +7,7 @@ var pathSass = './ui/style/sass/';
 // var minifyCSS = require('gulp-minify-css');
 
 gulp.task('sass', function () {
-  return gulp.src(pathSass + 'all.scss')
+  return gulp.src(pathSass + 'master.scss')
     .pipe(concat('style.css'))
     .pipe(sass().on('error', sass.logError))
     // .pipe(minifyCSS())

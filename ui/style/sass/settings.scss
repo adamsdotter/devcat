@@ -1,0 +1,26 @@
+// Rhythm
+$base-unit:   8px;
+$base-rhythm: 3;
+$rhythms: (
+    'base':   $base-rhythm,
+    'xsmall': 1,
+    'small':  2,
+    'medium': 4,
+    'large':  5
+);
+
+// Sizes
+$base-size: 16;
+$sizes: (
+    'base':    $base-size,
+    'small':   13,
+    'large':   46
+);
+
+// Font Family
+$font-primary: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+
+
+// Colors
+$color-primary: color('coral', 'light');
+$color-secondary: color('rat');
