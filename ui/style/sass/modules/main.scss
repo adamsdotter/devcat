@@ -8,20 +8,20 @@
     top: 0;
     bottom: 0;
 
-    dl {
-        position: absolute;
-        right: 1em;
-        bottom: 1em;
+    footer {
         margin: 0;
-    }
+        right: 0;
+        left: 0;
+        bottom: 1em;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 1em;
 
-    dt {
-        display: inline;
-    }
-
-    dd {
-        display: inline;
-        color: color('white', 'web');
-        margin-left: 0.25em;
+        @media screen and (min-width: 480px) {
+            right: 1em;
+            text-align: right;
+            width: auto;
+        }
     }
 }
