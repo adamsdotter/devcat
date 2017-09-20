@@ -1,4 +1,4 @@
-main {
+.page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,19 +8,20 @@ main {
     top: 0;
     bottom: 0;
 
-    h1 {
-        display: inline-block;
-        font-weight: normal;
-    }
-
-    p {
+    dl {
         position: absolute;
         right: 1em;
         bottom: 1em;
         margin: 0;
     }
 
-    span {
-        color: white;
+    dt {
+        display: inline;
+    }
+
+    dd {
+        display: inline;
+        color: color('white', 'web');
+        margin-left: 0.25em;
     }
 }
